@@ -1,0 +1,1323 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'League Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+   font-size: 46px;
+   line-height: 54px;
+   color: #222;
+}
+
+h4{
+   font-size: 20px;
+   color: #222;
+}
+
+h6{
+font-weight: 700;
+font-size: 12px;
+}
+
+p{
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+     padding: 40px 80px;
+}
+
+.section-m1 {
+    padding: 40px 0;
+}
+
+button.normal{
+font-size: 14px;
+font-weight: 600;
+padding: 15px 30px;
+color: rgb(0, 0, 0);
+background-color: #fff;
+border-radius: 4px;
+cursor: pointer;
+border:none;
+outline: none;
+transition: 0.2s;
+}
+
+button.white{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 19px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    transition: 0.2s;
+    }
+
+body {
+    width: 100%;
+}
+
+/* Header Start*/
+#sunidhi {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 5px 70px;
+       background: #c1efe4;
+       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+       z-index: 999;
+       position: sticky;
+       top: 0;
+       left: 0;
+}
+
+#navbar{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+
+}
+#navbar .x{
+    width: 200px;
+    height: 25px;
+    border-width: 0px;
+    border-radius: 30px;
+    padding-left: 10px;
+   
+   
+   
+}
+
+#navbar li{
+      list-style: none;
+      padding: 0 20px;
+      position: relative;
+
+}
+
+#navbar li a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #1a1a1a;
+        transition: 0.3s ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: green;
+
+
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+      content: "";
+      width: 30%;
+      height: 2px;
+      background: #088178;
+      position: absolute;
+      bottom: -4px;
+      left: 20px;
+
+}
+
+
+
+
+/* Home Page*/
+#karu{
+background-image: url(image/5.jpeg);
+height: 90vh;
+width: 100%;
+background-size: cover;
+padding: 0px 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start ;
+justify-content: center;
+
+}
+
+#karu h4{
+padding-bottom: 15px;
+color: #222;
+}
+
+#karu h2{
+    color: #000;
+}
+
+#karu h1{
+color: #2b744b;
+}
+
+#karu button{
+    background-image: url(image/b2.webp);
+    background-color: transparent;
+    color: rgb(3, 38, 2);
+    border: 0;
+    border-radius: 30px;
+    padding: 14px 50px 14px 45px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#karu button:hover{
+ background-color:#328054 ;
+ color: #fff;
+background-attachment: fixed;
+transition: 0.4s;
+ 
+}
+
+
+
+#prithak{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+   
+}
+#prithak .feature {
+    width: 180px;
+    text-align: center;
+    padding: 25px 0px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 2px solid #c1efe4;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#prithak .feature:hover{
+    box-shadow: 10px 10px 54px rgba(70, 60, 200, 0.01);
+
+}
+#prithak .feature h6{
+    display: inline-block;
+   padding: 9px 8px 6px 8px;
+   line-height: 1;
+   border-radius: 4px;
+   color: rgb(30, 103, 79);
+   background-color:rgb(188, 248, 203);
+}
+
+#prithak .feature:nth-child(2) h6{
+    background-color: rgb(245, 194, 194);
+}
+
+#prithak .feature:nth-child(3) h6{
+    background-color: rgb(254, 254, 188);
+}
+
+#prithak .feature:nth-child(4) h6{
+    background-color: rgb(181, 234, 255);
+}
+
+#prithak .feature:nth-child(5) h6{
+    background-color: rgb(245, 194, 194);
+}
+
+#prithak .feature:nth-child(6) h6{
+    background-color: rgb(246, 207, 255);
+}
+#shankar{
+    text-align: center;
+}
+
+#shankar .shankar-container{
+    display: flex;
+    justify-content:space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+
+#shankar .pro{ 
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #c1efe4;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#shankar .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#shankar .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#shankar .pro .des{
+  text-align: start;
+  padding: 10px 0;
+
+}
+
+#shankar .pro .des span{
+  color:#465b52;
+  font-size: 12px;
+}
+
+#shankar .pro .des h5{
+  padding-top: 7px;
+  color:#1a1a1a;
+  font-size: 14px;
+}
+
+#shankar .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#shankar .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+
+}
+#shankar .pro .cart{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-size: 25px;
+    width: 50px;
+    height:50px;
+    padding-top: 10px;
+    color: #088178;
+    background-color: #c1efe4;
+    border: 1px #c1efe4 solid;
+    border-radius: 50px;
+}
+
+#srivastav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: url(image/banner/b3.png);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#srivastav h4{
+      color:#465b52;
+      font-size: 30px;
+}
+
+#srivastav h2{
+color:  #2b744b;
+font-size: 60px;
+padding: 10px 0px;
+
+}
+#srivastav button:hover{
+    background-color: #088178;
+    color: #fff;
+}
+#o-banner{
+   display: flex;
+   justify-content: space-between ;
+
+  
+}
+
+#o-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(image/office/3office.jpeg);
+  width: 630px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 12px;
+}
+
+#o-banner .banner-box h4{
+    color:#fff;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+#o-banner .banner-box h2{
+    color: #1fc2b7;
+    font-size: 45px;
+    font-weight: 650;
+}
+
+#o-banner span{
+    color:#fff;
+    font: 19px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    
+
+}
+#o-banner .banner-box:hover button{
+    background:#1fc2b7;
+    
+}
+#o-banner .bb2{
+    background-image: url(image/decorations./1.jpeg);
+}
+
+#o-banner .bb2 h2{
+    color:rgb(179, 237, 179)
+}
+
+#o-banner .bb2:hover button{
+    background-color:rgb(179, 237, 179) ;
+}
+
+#end-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#end-banner .banner-box{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(image/endbanner/1\ end\ banner.jpeg);
+  width: 30%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+#end-banner .ebb2{
+    background-image: url(image/endbanner/2endb.jpeg);
+}
+
+#end-banner .ebb2 h2{
+    color: #e8ce09;
+}
+#end-banner .ebb3{
+    background-image: url(image/endbanner/3endb.jpeg);
+    padding-bottom: 50px;
+    
+}
+
+#end-banner .ebb3 h2{
+    color: #ff0000;
+}
+
+#end-banner h1{
+    color: rgb(255, 255, 255);
+}
+
+#end-banner h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#end-banner h2{
+    color: rgb(99, 212, 79);
+}
+
+#endletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#endletter {
+    background-image: url(image/banner/b1.jpeg);
+    height: 20vh;
+    padding-top: 40px;
+    padding-left: 80px;
+}
+
+#endletter .news h4{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+#endletter .news p{
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+#endletter .news span{
+    color: #f8cb00;
+}
+
+#endletter .homeform{
+    padding-right: 80px;
+}
+
+#endletter .homeform .x{
+    width: 300px;
+    height: 25px;
+    width: 100pxpx;
+    border-width: 0px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+
+}
+
+#endletter .homeform button:hover{
+    background-color: #088178;
+    color: #fff;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+    
+
+
+footer h4{
+    color: #000;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+footer p{
+
+    font-size: 16px;
+    margin: 0 0 9px 0;
+}
+
+footer a{
+
+    font-size: 13px;
+    margin: 0 0 10px 0;
+    text-decoration: none;
+    color: #465b52;
+}
+
+footer .follow{
+    margin-top: 15px;
+}
+
+footer .follow i{
+    padding-right: 3 px;
+    color: #465b52;
+    cursor: pointer;
+}
+
+.xyz{
+  
+text-align: center;}
+
+/*-------------------------------------------------------*/
+
+/* Shop Page*/
+
+
+#shopkaru{
+    background-image: url(image/decorations./2.jpeg);
+height: 60vh;
+width: 100%;
+background-size: cover;
+
+padding-top: 90px;
+text-decoration: dotted;
+}
+
+#shopkaru h4{
+    font-size: 60px;
+    color: #577568;
+    padding-left: 115px;
+    padding-top: 80px;
+    font-weight: 700;
+    text-decoration: underline;
+    
+    
+    
+}
+
+#page{
+    text-align: center;
+}
+
+#page a{
+    padding: 15px 20px;
+    background-color: #088178;
+    color: #fff;
+    border: 0 solid;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#prodetail .productimage{
+    width: 38%;
+    padding-left: 70px;
+    padding-top: 40px;
+    margin-right: 70px;
+    
+    
+}
+
+#prodetail{
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+#prodetail .productimagedetail   {
+    width: 60%;
+    padding-top: 70px;
+}
+
+
+
+#prodetail .productimagedetail h4{
+    padding: 40px 0 20px 0;
+    
+}
+
+#prodetail .productimagedetail h6{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#prodetail .productimagedetail h2{
+   font-size: 30px;
+   color: #088178;
+   padding: 0 0 20px 0;
+}
+
+#prodetail .productimagedetail input{
+    width: 50px;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right:8 px;
+    outline: none;
+    
+}
+
+#prodetail .productimagedetail  button{
+    width: 80px;
+    height: 45px;
+    border: 0 solid;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #088178;
+}
+
+#prodetail .productimagedetail span{
+    line-height: 25px;
+}
+
+.onclick{
+    transition: cubic-bezier();
+}
+
+/*Decoration page css*/
+
+
+#shopkaru2{
+    background-image: url(image/decorations./1.jpeg);
+height: 55vh;
+width: 100%;
+background-size: cover;
+text-align: center;
+padding-top: 90px;
+text-decoration: dotted;
+}
+
+#shopkaru2 h4{
+    font-size: 60px;
+    color: rgb(187, 255, 103);
+    line-height: normal; 
+}
+
+#shopkaru2 h1{
+    font-size: 69px;
+    color: rgb(253, 249, 124);
+    line-height: normal; 
+}
+
+#sunidhi12{
+    text-align: center;
+    
+
+}
+
+#sunidhi12 h2{
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#sunidhi12 .sunidhicontainer{
+    
+     
+    padding-left: 20px;
+    
+}
+
+
+
+#sunidhi12 .decore{ 
+    width: 1400px;
+    min-width: 1350px;
+    padding: 50px 30px;
+    border: 1px solid #c1efe4;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 20px 0;
+    transition: 0.2s ease;
+    position: relative;}
+
+    #sunidhi12 .decore img{
+        width: 1300px;
+    }
+
+
+
+/* Blog Page*/
+
+#ka .ru{
+    
+    background-image: url(image/b4.png);
+height: 55vh;
+width: 100%;
+background-size: cover;
+text-align: center;
+padding-top: 90px;
+text-decoration: dotted;
+
+}
+
+#ka .ru h4{
+font-size: 80px;
+color: rgb(252, 252, 144);
+padding-top: 20px;
+}
+
+#ka1 .ru1 h1{
+color: #1fc2b7;
+
+}
+
+
+            
+#ka1 .ru1 p{
+font-size: 30px;
+line-height: 30px;
+            }
+
+/* About Us */
+
+ /* styling the top section named as aboutkaru*/
+
+#aboutkaru{                                         
+    
+background-image: url(image/banner/bg.webp);
+height: 55vh;
+width: 100%;
+background-size: cover;
+text-align: center;
+padding-top: 90px;
+text-decoration: dotted;
+
+}
+ /*styling the text in aut division*/
+
+#aboutkaru .aut h4{                                 
+     padding-left: 15px;
+    font-size: 50px;
+    color: #4ac23a;
+    text-decoration: wavy;
+}
+
+#aboutkaru .aut span{
+    
+   color: #ffffff;
+
+}
+
+
+/*sytled the size and padding of the imange in aul division*/
+
+
+#aboutkaru .aul img{                                    
+    padding-right: 0px;
+    width: 120px;
+    text-decoration: wavy;
+
+    
+}
+
+/*styling the aboutsunidhi section*/
+#aboutsunidhi{
+    
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+#aboutsunidhi .as1{
+    width: 220px;
+    text-align: center;
+    padding: 25px 0px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #00ff66;
+    border-radius: 4px;
+    margin: 15px 0;
+    
+    
+}
+
+#aboutsunidhi h1{
+    color: #465b52;
+    background-color: #c1efe4
+}
+
+#aboutsunidhi p{
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 20px;
+}
+
+
+
+ 
+
+
+#as{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    background-color:  #c1efe4
+}
+
+#as p{
+    font-size: 30px;
+    line-height: 9px;
+}
+
+.rs p{
+   font-size: 22px;
+}
+
+#cv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#cv .sunicv {
+    padding-top: 35px;
+}
+
+#cv .sunicv img{
+    border-radius: 50%;
+    width: 200px;
+    border: solid 3px #2fac76;
+    
+   
+}
+
+#cv .sunicv2 img{
+    border-radius: 50%;
+    width: 250px;
+    border: solid 5px #92eed8;
+}
+
+
+
+#cv{
+    text-align: center;
+}
+
+
+
+
+#cv .sunicv2 p{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 7px;
+    
+    }
+
+#cv .sunicv p{
+        font-size: 15px;
+        line-height: 7px;
+        }
+
+#sabaikocv{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+#sabaikocv .sabaiphoto img{
+    width: 500px;
+    height: 80vh;
+    border-radius: 20%;
+    border: 5px solid gray;
+    
+    
+}
+
+#sabaikocv .sabaikodetail{
+    padding-right: 250px;
+}
+
+#sabaikocv .sabaikodetail p{
+    background-color: gray;
+    color: #fff;
+    line-height: 20px;
+    padding-left: 5px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+#sabaikocv h2{
+    font-weight: 400;
+    
+}
+#sabaikocv h4{
+    font-weight: 500;
+    margin-top: 25px;
+    padding-left: 5px;
+    line-height: 25px;
+}
+
+#sabaikocv table, th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center; 
+}
+
+#sabaikocv table ,th{
+    width: 100%;
+    height: 10vh;
+    border: none;
+}
+
+#sabaikocv table ,td{
+   border-left: none;
+   border-right: none;
+   line-height: 25px;
+}
+
+    
+
+
+/* Cart Page*/
+
+#cartkaru .input{
+    
+   width: 40px;
+    
+    }
+ #cartkaru table,th,td{
+    width: 100%;
+    border-collapse:collapse;
+    white-space: nowrap;
+    table-layout: fixed;
+    white-space: nowrap;
+   
+
+
+    }
+
+#coupon{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#coupon .cu h4{
+       margin-bottom: 25px;    
+}
+
+#coupon .cu input{
+    width: 250px;
+    height: 5.5vh;
+    outline: none;
+    padding-left: 10px;
+    border: 1px solid rgb(216, 200, 200);
+    
+}
+
+#coupon .cu button{
+   
+    color: #fff;
+    background-color: #1fc2b7;
+    
+}
+
+#total{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #9abf99;
+}
+
+#total table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+   
+}
+
+#total table td{
+    width: 50%;
+    border: 1px solid #9abf99;
+    font-size: 14px;
+}
+#total button{
+    background-color: #1fc2b7;
+    color: #fff;
+}
+
+
+/* login page*/
+
+
+#nidhi1 { 
+    display: flex;
+    justify-content: center;
+}
+
+
+#nidhi1 .card{
+    width: 810px;
+    height: 620px;
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.3);
+   
+    background-image: url(image/login.jpeg);
+    
+}
+.section-x{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+#nidhi1 .card h1{
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+#nidhi1 .card h2{
+    color: aliceblue;
+   
+}
+
+#nidhi1 .card p{
+    color: aliceblue;
+    
+   
+}
+
+
+#nidhi1 .card a{
+    color: rgb(38, 114, 181);
+   
+}
+
+#nidhi1 .card input{
+    margin-left: 20px;
+    
+    margin-bottom: 20px;
+    border: 0 ;
+    height: 30px;
+    padding-left: 5px;
+    width: 750px;
+   
+}
+
+#nidhi1 button{
+    width:750px;
+    height: 40px;
+    border: 0;
+    margin-left: 20px;
+    color: aliceblue ;
+    background-color: #1fc2b7;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+/* Research */
+.kxa {
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+
+.ujjwal{
+    margin-bottom: 20px;
+
+}
+.xx{
+    margin-right: 30px;
+}
+
+.xxx{
+    padding-left: 30px;
+margin-right: 30px;
+padding-bottom: 30px;
+}
+
+
+.xxx p{
+    font-size: 20px;
+}
+.xxx h1{
+    font-size: 70px;
+   padding-left: 430px;
+   padding-bottom: 20px;
+   color: black;
+  
+}
+
+.xxx h2{
+    font-size: 40px;
+    padding-left: 150px;
+    line-height: normal;
+    
+}
+
+.xxx h3{
+
+    font-size: 30px;
+}
+
+#rn .ujjwal h3{
+
+    padding-left: 30px;
+}
+
+#rn .def{
+
+    padding-left: 30px;
+}
+
+#rn .ghi button{
+    border: 0px;
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 20px;
+    
+}
+
+#rn .abc{
+
+    display: flex;
+    width: 100%;
+    height: 33vh;
+    justify-content: space-between;
+}
+
+#rn .xx{
+    padding-top: 0px;
+}
+#rn .xy{
+    padding-left: 30px;
+}
+
+
+ 
+
+
+/* Start Media Query*/
+
+/*tablet*/
+
+@media (max-width:799px) {
+    
+     #karu{
+      
+        height: 75vh;}
+
+    
+
+   
+   
+    #srivastav {
+        
+        height: 20vh;
+        
+    }
+
+    #o-banner .banner-box {
+       
+        width: 100%;
+        height: 30vh;
+        justify-content: space-between;
+    }
+    
+    #end-banner {
+        
+        padding:40px 80px;
+    }
+
+    #end-banner .banner-box {
+       
+        width: 32%;
+        padding: 0px;
+        
+    }
+
+    h1 {
+        font-size: 40px;
+        
+    }
+
+    h2 {
+        font-size: 40px;
+        
+    }
+
+    #endletter .homeform .x {
+        width: 400px;
+        
+    }}
+
+
+/*---------------------------------------*/
+/* mobile*/
+
+@media (max-width:477px) {
+  
+    #navbar .x {
+       display: none;
+    }
+
+    body {
+        width: 560px;
+    }
+        
+    #srivastav {
+      
+        height: 35vh;
+        
+    }
+
+    #shankar .shankar-container {
+        
+        justify-content: center
+        
+    }
+
+    #o-banner {
+        
+        justify-content: center;
+        padding: 10px  80px;
+       
+    }
+
+    #o-banner .banner-box h2 {
+        
+        font-size: 30px;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    h1 {
+        font-size: 25px;
+        line-height: normal;
+        font-weight: 800;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    #end-banner h3 {
+      
+        font-weight: 400;
+       
+    }
+
+    #endletter {
+        height: 30vh;
+       
+    }
+
+    #endletter .homeform .x {
+        width: 200px;
+        
+    }
+
+    #endletter .news h4 {
+       
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    #endletter .news p {
+        
+        font-size: 19px;
+    }
+
+    #endletter .homeform {
+        padding-right: 80px;
+    padding-bottom: 30px;
+    }
+   
+    
+}
+
+
+
+
+
+
+
